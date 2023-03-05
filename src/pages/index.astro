@@ -3,49 +3,33 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
+<Layout title="Welcome to What a Story">
+	<main class="max-w-2xl mx-auto px-8 py-14">
+		<h1 class="text-4xl font-bold">Your product is stopping you from <span class="text-gradient">Astro</span> and <span class="text-gradient">Conversions</span></h1>
+		<!-- <p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		</p> -->
+		<Card
+			title="Web Development"
+			description="Being a leading website application development company, our certified developers have unparalleled expertise in working with the latest web technologies to deliver custom web solutions. Whether creating a web presence for your company, an information hub for your business or empowering your apps/IoT devices through backend- IndiaNIC does it all by covering a wide spectrum of web solutions and framework."
+		/>
+		<Card
+			title="AI - ML App Development"
+			description="Looking to add intelligence to your existing business application or want to develop a new one? You are in the right place. Our AI-ML engineers will help you do that. We build AI-ML solutions that will save upto 30% cost on your overall business operations. We have expertise in working with tools, frameworks and technologies like TensorFlow, Apache SystemML, Caffe, Apache Mahout, OpenNN, Torch, Neuroph, Mycroft AI, etc. to foster business intelligence to diverse industry verticals."
+		/>
+		<Card
+			title="Quality Assurance (QA)"
+			description="We keep Quality Assurance (QA) and software testing services at the core of our ecosystem. IndiaNIC has proven testing experts whose confidence helps in faster releases with uncompromised quality. We perform various tests such as Functional, GUI, Usability, Security, Database testing, Cross-platform, Cross-browser, Accessibility, etc. Our QA experts work with DevOps tools and automated build testing techniques for faster delivery. With us, you will have full access to QA reports to stay updated about test results having all the details."
+		/>
+		<Card
+			title="Hire Dedicated Developers"
+			description="Create your own software development team on your time and terms by handpicking the best developers from IndiaNIC. We offer flexible engagement models to hire developers on a short term, long term or permanent basis to ideally suit your business needs. Scale up your development team within 48 hours with ready-to-kick-off experts. We follow a consultative approach to prepare a roadmap that describes the skill set and experience you need based on your project idea."
+		/>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -71,11 +55,5 @@ import Card from '../components/Card.astro';
 	}
 	.instructions strong {
 		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
 	}
 </style>
